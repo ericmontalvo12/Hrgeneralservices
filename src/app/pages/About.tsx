@@ -17,7 +17,6 @@ const values = [
 ];
 
 const highlights = [
-  'Licensed & Insured',
   'Miami-Based Team',
   '10+ Years Experience',
   '500+ Projects Completed',

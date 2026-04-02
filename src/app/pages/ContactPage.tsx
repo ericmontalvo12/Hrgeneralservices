@@ -4,11 +4,9 @@ import { Contact } from '../components/Contact';
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black">
       <Header />
-      <div className="pt-32">
-        <Contact />
-      </div>
+      <Contact />
       <Footer />
     </div>
   );
