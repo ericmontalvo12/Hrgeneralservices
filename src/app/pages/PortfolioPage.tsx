@@ -1,8 +1,6 @@
 import { useState } from 'react';
-import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 type Category = 'All' | 'Bathrooms' | 'Kitchens' | 'Flooring' | 'Painting' | 'Drywall';
 
@@ -112,33 +110,31 @@ export default function PortfolioPage() {
             ))}
           </div>
 
-          {/* Masonry Grid */}
-          <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 640: 2, 1024: 3 }}>
-            <Masonry gutter="16px">
-              {filtered.map((project, index) => (
-                <div
-                  key={`${project.category}-${index}`}
-                  className="group relative overflow-hidden bg-black"
-                >
-                  <ImageWithFallback
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full object-cover group-hover:scale-105 transition-all duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400">
-                    <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <div className="text-xs tracking-widest text-[#d4af37] mb-1">
-                        {project.category.toUpperCase()}
-                      </div>
-                      <h3 className="text-lg text-white" style={{ fontFamily: 'Playfair Display, serif' }}>
-                        {project.title}
-                      </h3>
+          {/* Uniform Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {filtered.map((project, index) => (
+              <div
+                key={`${project.category}-${index}`}
+                className="group relative aspect-[4/3] overflow-hidden bg-gray-100"
+              >
+                {/* Placeholder */}
+                <div className="w-full h-full flex items-center justify-center bg-gray-100">
+                  <span className="text-xs tracking-widest text-gray-400 uppercase">{project.category}</span>
+                </div>
+                {/* Hover overlay */}
+                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                  <div className="p-6">
+                    <div className="text-xs tracking-widest text-[#d4af37] mb-1">
+                      {project.category.toUpperCase()}
                     </div>
+                    <h3 className="text-lg text-white" style={{ fontFamily: 'Playfair Display, serif' }}>
+                      {project.title}
+                    </h3>
                   </div>
                 </div>
-              ))}
-            </Masonry>
-          </ResponsiveMasonry>
+              </div>
+            ))}
+          </div>
         </div>
       </main>
 
