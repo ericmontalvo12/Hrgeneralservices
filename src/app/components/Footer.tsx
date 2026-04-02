@@ -1,4 +1,5 @@
 import { Instagram, Facebook, Linkedin } from 'lucide-react';
+import { Logo } from './Logo';
 
 export function Footer() {
   return (
@@ -7,9 +8,8 @@ export function Footer() {
         <div className="grid lg:grid-cols-12 gap-16 py-24">
           {/* Company Info */}
           <div className="lg:col-span-5">
-            <div className="flex flex-col mb-8">
-              <span className="text-3xl tracking-[0.2em] text-black" style={{ fontFamily: 'Playfair Display, serif' }}>ELITE</span>
-              <span className="text-xs tracking-[0.3em] text-[#d4af37] ml-1">REMODELING</span>
+            <div className="mb-8">
+              <Logo size="md" />
             </div>
             <p className="text-gray-600 mb-8 max-w-sm leading-relaxed">
               Where exceptional craftsmanship meets timeless design. Transforming spaces into extraordinary environments since 2011.
