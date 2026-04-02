@@ -7,14 +7,14 @@ export function Footer() {
       <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 py-24">
           {/* Company Info */}
-          <div className="lg:col-span-5">
+          <div className="lg:col-span-5 flex flex-col items-center lg:items-start">
             <div className="mb-8">
               <Logo size="md" href="/" />
             </div>
-            <p className="text-gray-600 mb-8 max-w-sm leading-relaxed">
+            <p className="text-gray-600 mb-8 max-w-sm leading-relaxed text-center lg:text-left">
               Where exceptional craftsmanship meets timeless design. Transforming spaces into extraordinary environments since 2011.
             </p>
-            <div className="flex gap-3">
+            <div className="flex gap-3 justify-center lg:justify-start">
               <a href="#" className="flex items-center gap-2 bg-black text-white px-5 py-3 text-xs tracking-widest hover:bg-[#d4af37] hover:text-black transition-all duration-300">
                 <Instagram className="w-4 h-4" />
                 <span>INSTAGRAM</span>
