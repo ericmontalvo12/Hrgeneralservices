@@ -42,7 +42,7 @@ export function Hero() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 pt-12 border-t border-black/10">
               <div>
-                <div className="text-4xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>15+</div>
+                <div className="text-4xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>10+</div>
                 <div className="text-xs tracking-wider text-gray-500">YEARS</div>
               </div>
               <div>
