@@ -1,9 +1,10 @@
 interface LogoProps {
   className?: string;
   size?: 'sm' | 'md' | 'lg';
+  href?: string;
 }
 
-export function Logo({ className = '', size = 'md' }: LogoProps) {
+export function Logo({ className = '', size = 'md', href = '/' }: LogoProps) {
   const scales = {
     sm: { hr: 'text-4xl', line: 'w-20', text: 'text-[10px]' },
     md: { hr: 'text-5xl', line: 'w-28', text: 'text-[11px]' },
@@ -12,7 +13,7 @@ export function Logo({ className = '', size = 'md' }: LogoProps) {
   const s = scales[size];
 
   return (
-    <div className={`flex flex-col items-center ${className}`}>
+    <a href={href} className={`flex flex-col items-center ${className}`}>
       <span
         className={`${s.hr} font-serif leading-none text-black`}
         style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 400 }}
@@ -26,6 +27,6 @@ export function Logo({ className = '', size = 'md' }: LogoProps) {
       >
         General Services
       </span>
-    </div>
+    </a>
   );
 }

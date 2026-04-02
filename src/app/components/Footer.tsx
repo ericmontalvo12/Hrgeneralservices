@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Linkedin } from 'lucide-react';
+import { Instagram, Facebook } from 'lucide-react';
 import { Logo } from './Logo';
 
 export function Footer() {
@@ -9,20 +9,19 @@ export function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-5">
             <div className="mb-8">
-              <Logo size="md" />
+              <Logo size="md" href="/" />
             </div>
             <p className="text-gray-600 mb-8 max-w-sm leading-relaxed">
               Where exceptional craftsmanship meets timeless design. Transforming spaces into extraordinary environments since 2011.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="w-12 h-12 border border-black/10 flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300">
-                <Instagram className="w-5 h-5" />
+            <div className="flex gap-3">
+              <a href="#" className="group flex items-center gap-2 px-4 py-2 border border-black/15 text-xs tracking-widest text-gray-500 hover:border-[#d4af37] hover:text-[#d4af37] transition-all duration-300">
+                <Instagram className="w-4 h-4" />
+                <span>INSTAGRAM</span>
               </a>
-              <a href="#" className="w-12 h-12 border border-black/10 flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-12 h-12 border border-black/10 flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300">
-                <Linkedin className="w-5 h-5" />
+              <a href="#" className="group flex items-center gap-2 px-4 py-2 border border-black/15 text-xs tracking-widest text-gray-500 hover:border-[#d4af37] hover:text-[#d4af37] transition-all duration-300">
+                <Facebook className="w-4 h-4" />
+                <span>FACEBOOK</span>
               </a>
             </div>
           </div>
