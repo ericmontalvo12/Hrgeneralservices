@@ -9,7 +9,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-5 flex flex-col items-center lg:items-start">
             <div className="mb-8">
-              <Logo size="md" href="/" />
+              <Logo size="md" href="/" className="items-center lg:items-start" />
             </div>
             <p className="text-gray-600 mb-8 max-w-sm leading-relaxed text-center lg:text-left">
               Where exceptional craftsmanship meets timeless design. Transforming spaces into extraordinary environments since 2011.
