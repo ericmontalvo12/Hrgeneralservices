@@ -58,13 +58,36 @@ export function Hero() {
 
           {/* Right Image Grid */}
           <div className="relative">
-            {/* Mobile: single featured image */}
-            <div className="lg:hidden aspect-[4/3] overflow-hidden">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1774716925801-cad665240e12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
-                alt="Modern door"
-                className="w-full h-full object-cover object-center"
-              />
+            {/* Mobile: 2x2 grid */}
+            <div className="lg:hidden grid grid-cols-2 gap-2">
+              <div className="aspect-square overflow-hidden">
+                <ImageWithFallback
+                  src="https://images.unsplash.com/photo-1663811397133-2d1f5addd9d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                  alt="Luxury bathroom"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="aspect-square overflow-hidden">
+                <ImageWithFallback
+                  src="https://images.unsplash.com/photo-1759239355404-63313f92cfc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                  alt="Modern kitchen"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="aspect-square overflow-hidden">
+                <ImageWithFallback
+                  src="https://images.unsplash.com/photo-1663811396038-7a21d4eef49e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                  alt="Elegant bathroom design"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="aspect-square overflow-hidden">
+                <ImageWithFallback
+                  src="https://images.unsplash.com/photo-1774716925801-cad665240e12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                  alt="Modern door"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
 
             {/* Desktop: staggered grid */}
