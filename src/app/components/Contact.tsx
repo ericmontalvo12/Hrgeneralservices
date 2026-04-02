@@ -46,11 +46,12 @@ export function Contact() {
 
               <div className="border-l-2 border-[#d4af37] pl-6">
                 <div className="text-xs tracking-widest text-[#d4af37] mb-2">EMAIL</div>
-                <div className="text-white text-lg">contact@eliteremodeling.com</div>
+                <div className="text-white text-lg">your@email.com</div>
               </div>
 
               <div className="border-l-2 border-[#d4af37] pl-6">
                 <div className="text-xs tracking-widest text-[#d4af37] mb-2">OFFICE</div>
+                <div className="text-white text-lg">Miami, FL</div>
               </div>
 
               <div className="border-l-2 border-[#d4af37] pl-6">
