@@ -11,7 +11,7 @@ const steps = [
   },
   {
     number: '03',
-    title: 'Measure & Design',
+    title: 'Measure \u0026 Design',
     description: 'We take precise measurements and plan every detail to ensure a perfect fit.',
   },
   {
