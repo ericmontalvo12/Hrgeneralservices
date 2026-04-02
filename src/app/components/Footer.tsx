@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="bg-white border-t border-black/10">
       <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
-        <div className="grid lg:grid-cols-12 gap-16 py-24">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 py-24">
           {/* Company Info */}
           <div className="lg:col-span-5">
             <div className="mb-8">
@@ -61,7 +61,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-black/10 py-8">
+        <div className="border-t border-black/10 py-6 lg:py-8">
           <div className="flex items-center justify-center">
             <p className="text-sm text-gray-500">
               © {new Date().getFullYear()} Elite Remodeling. All rights reserved.

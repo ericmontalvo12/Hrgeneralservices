@@ -62,13 +62,13 @@ export function Portfolio() {
                 />
               </div>
 
-              <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/90 to-transparent">
+              <div className="absolute bottom-0 left-0 right-0 p-5 lg:p-8 bg-gradient-to-t from-black/90 to-transparent">
                 <div className="flex items-end justify-between">
                   <div>
                     <div className="text-xs tracking-widest text-[#d4af37] mb-2">
                       {project.category} — {project.year}
                     </div>
-                    <h3 className="text-3xl text-white" style={{ fontFamily: 'Playfair Display, serif' }}>
+                    <h3 className="text-xl lg:text-3xl text-white" style={{ fontFamily: 'Playfair Display, serif' }}>
                       {project.title}
                     </h3>
                   </div>

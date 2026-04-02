@@ -25,7 +25,7 @@ export function Contact() {
   return (
     <section id="contact" className="py-32 bg-black">
       <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
-        <div className="grid lg:grid-cols-2 gap-24 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
           {/* Left Content */}
           <div>
             <div className="w-12 h-px bg-[#d4af37] mb-8"></div>
@@ -38,23 +38,23 @@ export function Contact() {
               Schedule a complimentary consultation to discuss your vision. Our team of master craftsmen is ready to bring your dream interior to life.
             </p>
 
-            <div className="space-y-8">
-              <div className="border-l-2 border-[#d4af37] pl-6">
+            <div className="space-y-6 lg:space-y-8">
+              <div className="border-l-2 border-[#d4af37] pl-4 lg:pl-6">
                 <div className="text-xs tracking-widest text-[#d4af37] mb-2">PHONE</div>
                 <div className="text-white text-lg">+1 (786) 674-8817</div>
               </div>
 
-              <div className="border-l-2 border-[#d4af37] pl-6">
+              <div className="border-l-2 border-[#d4af37] pl-4 lg:pl-6">
                 <div className="text-xs tracking-widest text-[#d4af37] mb-2">EMAIL</div>
                 <div className="text-white text-lg">your@email.com</div>
               </div>
 
-              <div className="border-l-2 border-[#d4af37] pl-6">
+              <div className="border-l-2 border-[#d4af37] pl-4 lg:pl-6">
                 <div className="text-xs tracking-widest text-[#d4af37] mb-2">OFFICE</div>
                 <div className="text-white text-lg">Miami, FL</div>
               </div>
 
-              <div className="border-l-2 border-[#d4af37] pl-6">
+              <div className="border-l-2 border-[#d4af37] pl-4 lg:pl-6">
                 <div className="text-xs tracking-widest text-[#d4af37] mb-2">HOURS</div>
                 <div className="text-white">Monday - Friday: 8:00 AM - 6:00 PM</div>
                 <div className="text-gray-400">Saturday: 9:00 AM - 4:00 PM</div>
@@ -63,7 +63,7 @@ export function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white p-12">
+          <div className="bg-white p-6 lg:p-12">
             <form onSubmit={handleSubmit} className="space-y-8">
               <div>
                 <label htmlFor="name" className="block text-xs tracking-wider mb-3 text-black">
@@ -76,7 +76,7 @@ export function Contact() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-0 py-3 border-b border-black/20 focus:outline-none focus:border-[#d4af37] transition-colors bg-transparent"
+                  className="w-full px-0 py-4 border-b border-black/20 focus:outline-none focus:border-[#d4af37] transition-colors bg-transparent"
                   placeholder="John Doe"
                 />
               </div>
@@ -92,7 +92,7 @@ export function Contact() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-0 py-3 border-b border-black/20 focus:outline-none focus:border-[#d4af37] transition-colors bg-transparent"
+                  className="w-full px-0 py-4 border-b border-black/20 focus:outline-none focus:border-[#d4af37] transition-colors bg-transparent"
                   placeholder="john@example.com"
                 />
               </div>
@@ -107,7 +107,7 @@ export function Contact() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-0 py-3 border-b border-black/20 focus:outline-none focus:border-[#d4af37] transition-colors bg-transparent"
+                  className="w-full px-0 py-4 border-b border-black/20 focus:outline-none focus:border-[#d4af37] transition-colors bg-transparent"
                   placeholder="+1 (555) 123-4567"
                 />
               </div>
@@ -122,7 +122,7 @@ export function Contact() {
                   required
                   value={formData.service}
                   onChange={handleChange}
-                  className="w-full px-0 py-3 border-b border-black/20 focus:outline-none focus:border-[#d4af37] transition-colors bg-transparent"
+                  className="w-full px-0 py-4 border-b border-black/20 focus:outline-none focus:border-[#d4af37] transition-colors bg-transparent"
                 >
                   <option value="">Select a service</option>
                   <option value="drywall">Drywall Installation</option>
@@ -146,7 +146,7 @@ export function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full px-0 py-3 border-b border-black/20 focus:outline-none focus:border-[#d4af37] transition-colors resize-none bg-transparent"
+                  className="w-full px-0 py-4 border-b border-black/20 focus:outline-none focus:border-[#d4af37] transition-colors resize-none bg-transparent"
                   placeholder="Tell us about your vision..."
                 />
               </div>

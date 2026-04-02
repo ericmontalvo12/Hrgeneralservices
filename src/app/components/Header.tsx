@@ -8,7 +8,7 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-black/5">
       <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-20 lg:h-24">
           <div className="flex items-center">
             <Logo size="sm" />
           </div>

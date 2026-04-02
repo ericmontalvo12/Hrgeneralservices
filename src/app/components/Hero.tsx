@@ -4,12 +4,12 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center bg-white pt-24">
       <div className="max-w-[1400px] mx-auto px-8 lg:px-12 w-full">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-8 lg:pr-12">
             <div className="space-y-6">
               <div className="w-12 h-px bg-[#d4af37]"></div>
-              <h1 className="text-6xl lg:text-7xl leading-[1.1] text-black" style={{ fontFamily: 'Playfair Display, serif' }}>
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl leading-[1.1] text-black" style={{ fontFamily: 'Playfair Display, serif' }}>
                 Exquisite
                 <br />
                 Interiors,
@@ -27,30 +27,30 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center text-sm tracking-wider bg-black text-white px-10 py-4 hover:bg-[#d4af37] hover:text-black transition-all duration-300"
+                className="inline-flex items-center justify-center text-sm tracking-wider bg-black text-white px-6 lg:px-10 py-4 hover:bg-[#d4af37] hover:text-black transition-all duration-300"
               >
                 SCHEDULE CONSULTATION
               </a>
               <a
                 href="#portfolio"
-                className="inline-flex items-center justify-center text-sm tracking-wider border border-black text-black px-10 py-4 hover:bg-black hover:text-white transition-all duration-300"
+                className="inline-flex items-center justify-center text-sm tracking-wider border border-black text-black px-6 lg:px-10 py-4 hover:bg-black hover:text-white transition-all duration-300"
               >
                 VIEW PORTFOLIO
               </a>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-12 border-t border-black/10">
+            <div className="grid grid-cols-3 gap-4 lg:gap-8 pt-12 border-t border-black/10">
               <div>
-                <div className="text-4xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>10+</div>
+                <div className="text-3xl lg:text-4xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>10+</div>
                 <div className="text-xs tracking-wider text-gray-500">YEARS</div>
               </div>
               <div>
-                <div className="text-4xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>500+</div>
+                <div className="text-3xl lg:text-4xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>500+</div>
                 <div className="text-xs tracking-wider text-gray-500">PROJECTS</div>
               </div>
               <div>
-                <div className="text-4xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>100%</div>
+                <div className="text-3xl lg:text-4xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>100%</div>
                 <div className="text-xs tracking-wider text-gray-500">SATISFACTION</div>
               </div>
             </div>
