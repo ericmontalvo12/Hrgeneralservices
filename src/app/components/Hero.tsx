@@ -58,7 +58,17 @@ export function Hero() {
 
           {/* Right Image Grid */}
           <div className="relative">
-            <div className="grid grid-cols-2 gap-4">
+            {/* Mobile: single featured image */}
+            <div className="lg:hidden aspect-[4/3] overflow-hidden">
+              <ImageWithFallback
+                src="https://images.unsplash.com/photo-1774716925801-cad665240e12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                alt="Modern door"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+
+            {/* Desktop: staggered grid */}
+            <div className="hidden lg:grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="aspect-[3/4] overflow-hidden">
                   <ImageWithFallback
@@ -86,7 +96,7 @@ export function Hero() {
                 <div className="aspect-[3/4] overflow-hidden">
                   <ImageWithFallback
                     src="https://images.unsplash.com/photo-1774716925801-cad665240e12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
-                    alt="Modern bathroom"
+                    alt="Modern door"
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                   />
                 </div>
