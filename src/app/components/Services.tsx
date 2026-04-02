@@ -2,32 +2,32 @@ const services = [
   {
     number: '01',
     title: 'Drywall Installation',
-    description: 'Precision drywall installation and finishing for flawlessly smooth walls and ceilings that serve as the perfect canvas for your interior vision.',
+    description: 'Clean lines start here. We install and finish drywall to a flawless surface — the foundation every great interior deserves.',
   },
   {
     number: '02',
     title: 'Interior Painting',
-    description: 'Masterful painting services using premium materials and meticulous techniques to achieve stunning, enduring finishes.',
+    description: 'Color that holds. We use premium paints and prep every surface properly so the finish looks sharp on day one and stays that way.',
   },
   {
     number: '03',
     title: 'Floor Installation',
-    description: 'Expert installation of hardwood, marble, porcelain, and luxury vinyl flooring with uncompromising attention to detail.',
+    description: 'From wide-plank hardwood to large-format porcelain, we install flooring with the precision it takes to get it level, tight, and built to last.',
   },
   {
     number: '04',
     title: 'Custom Cabinetry',
-    description: 'Bespoke cabinetry crafted to your exact specifications, combining functionality with sophisticated design.',
+    description: 'Built to fit your space and your life. Our cabinetry is designed for function first, finished for looks that elevate the whole room.',
   },
   {
     number: '05',
     title: 'Bathroom Remodels',
-    description: 'Complete bathroom transformations that blend spa-like luxury with practical elegance and timeless design.',
+    description: 'We turn outdated bathrooms into spaces you actually want to be in — clean, modern, and built with materials that hold up in South Florida\'s climate.',
   },
   {
     number: '06',
     title: 'Kitchen Remodels',
-    description: 'Comprehensive kitchen renovations featuring premium materials, innovative layouts, and exceptional craftsmanship.',
+    description: 'The kitchen is the heart of the home. We redesign and rebuild it with thoughtful layouts, quality finishes, and zero shortcuts.',
   },
 ];
 
@@ -41,7 +41,7 @@ export function Services() {
             Our <span className="italic text-[#d4af37]">Expertise</span>
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl">
-            Six core services, each executed with precision and an unwavering commitment to excellence
+            Everything your home needs — handled by one team that knows Miami and takes pride in every job.
           </p>
         </div>
 

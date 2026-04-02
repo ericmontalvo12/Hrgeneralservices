@@ -13,7 +13,7 @@ export function Footer() {
               <Logo size="md" href="/" className="items-center lg:items-start" />
             </div>
             <p className="text-gray-600 mb-8 max-w-sm leading-relaxed text-center lg:text-left">
-              Where exceptional craftsmanship meets timeless design. Transforming spaces into extraordinary environments since 2011.
+              Quality work, honest pricing, zero shortcuts. Serving Miami and South Florida since 2011.
             </p>
             <div className="flex gap-3 justify-center lg:justify-start">
               <a href="#" className="flex items-center gap-2 bg-black text-white px-5 py-3 text-xs tracking-widest hover:bg-[#d4af37] hover:text-black transition-all duration-300">

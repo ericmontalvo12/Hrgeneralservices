@@ -4,15 +4,15 @@ import { Footer } from '../components/Footer';
 const values = [
   {
     title: 'Quality Craftsmanship',
-    description: 'Every project is executed with meticulous attention to detail, using premium materials and proven techniques that stand the test of time.',
+    description: 'We use premium materials and take the time to do it right. No rushing, no cutting corners — just work that holds up and looks great for years.',
   },
   {
     title: 'Honest Pricing',
-    description: 'We provide clear, upfront estimates with no hidden fees. You always know exactly what you\'re paying for before work begins.',
+    description: 'You get a clear estimate before anything starts. No surprises, no hidden fees. What we quote is what you pay.',
   },
   {
     title: 'Client-First Approach',
-    description: 'Your vision drives every decision we make. We listen, advise, and deliver results that exceed expectations — on time and on budget.',
+    description: 'We listen before we work. Your vision, your timeline, your home — we\'re here to make the process easy and the result exactly what you had in mind.',
   },
 ];
 
@@ -45,7 +45,7 @@ export default function About() {
             <div>
               <div className="text-xs tracking-widest text-[#d4af37] mb-6">OUR STORY</div>
               <p className="text-gray-600 text-lg leading-relaxed">
-                HR General Services was founded in Miami with one simple belief — quality work, honest pricing, and zero shortcuts. With over 10 years of experience transforming homes across South Florida, our team brings craftsmanship and care to every project, whether it's a single room refresh or a full home renovation.
+                HR General Services was built in Miami, for Miami. We started with one belief — that homeowners deserve honest work, fair pricing, and a crew that actually cares. Over 10 years and 500+ projects later, that hasn't changed. Whether it's a single room or a full renovation, we treat every home like it's our own.
               </p>
             </div>
             <div className="border-l-2 border-[#d4af37] pl-8 lg:pl-12">
@@ -106,10 +106,10 @@ export default function About() {
           <div className="text-center">
             <div className="w-12 h-px bg-[#d4af37] mb-8 mx-auto"></div>
             <h2 className="text-4xl lg:text-5xl text-black mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
-              Ready to Start Your <span className="italic text-[#d4af37]">Project?</span>
+              Ready to Get <span className="italic text-[#d4af37]">Started?</span>
             </h2>
             <p className="text-gray-600 mb-10 max-w-xl mx-auto leading-relaxed">
-              Let's talk about your vision. We offer free estimates and are always happy to answer your questions.
+              Free estimates, fast response. Reach out and let's talk about what your home needs.
             </p>
             <a
               href="/contact"

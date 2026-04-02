@@ -2,27 +2,27 @@ const steps = [
   {
     number: '01',
     title: 'Request a Quote',
-    description: 'Share your project details and we\'ll get back to you with a clear, honest estimate.',
+    description: 'Tell us about your project and we\'ll get back to you fast with a clear, honest estimate — no pressure, no runaround.',
   },
   {
     number: '02',
     title: 'In-Home Consultation',
-    description: 'One of our experts visits your home to assess the space and understand your vision.',
+    description: 'We come to you. One of our team members walks the space, listens to what you want, and gives you straight answers.',
   },
   {
     number: '03',
-    title: 'Measure \u0026 Design',
-    description: 'We take precise measurements and plan every detail to ensure a perfect fit.',
+    title: 'Measure \u0026 Plan',
+    description: 'We measure everything and plan the job in detail before a single tool comes out — because surprises belong on vacation, not in your home.',
   },
   {
     number: '04',
-    title: 'Installation Day',
-    description: 'Our professional team arrives on time and works with care and precision at every step.',
+    title: 'We Get to Work',
+    description: 'Our crew shows up on time, works clean, and treats your home with respect. Every step is done right the first time.',
   },
   {
     number: '05',
     title: 'Final Walkthrough',
-    description: 'We review every detail with you before calling the job complete. Your satisfaction is guaranteed.',
+    description: 'We walk through every detail with you before we call it done. If something\'s not right, we fix it. Simple as that.',
   },
 ];
 

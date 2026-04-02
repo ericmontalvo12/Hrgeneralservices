@@ -30,12 +30,12 @@ export function Contact() {
           <div>
             <div className="w-12 h-px bg-[#d4af37] mb-8"></div>
             <h2 className="text-5xl lg:text-6xl text-white mb-8" style={{ fontFamily: 'Playfair Display, serif' }}>
-              Let's Begin Your
+              Let's Build
               <br />
-              <span className="italic text-[#d4af37]">Transformation</span>
+              <span className="italic text-[#d4af37]">Something Great</span>
             </h2>
             <p className="text-lg text-gray-400 mb-12 max-w-lg leading-relaxed">
-              Schedule a complimentary consultation to discuss your vision. Our team of master craftsmen is ready to bring your dream interior to life.
+              Free estimates, fast response, and a team that shows up and delivers. Tell us about your project and let's get started.
             </p>
 
             <div className="space-y-6 lg:space-y-8">

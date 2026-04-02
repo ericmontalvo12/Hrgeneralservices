@@ -10,14 +10,14 @@ export function Hero() {
             <div className="space-y-6">
               <div className="w-12 h-px bg-[#d4af37] mx-auto lg:mx-0"></div>
               <h1 className="text-4xl sm:text-5xl lg:text-7xl leading-[1.1] text-black" style={{ fontFamily: 'Playfair Display, serif' }}>
-                Exquisite Interiors, <span className="italic text-[#d4af37]">Crafted</span>
+                Miami Homes,<span className="italic text-[#d4af37]"> Built</span>
                 <span className="hidden lg:inline"><br /></span>
-                {' '}to Perfection
+                {' '}to Last
               </h1>
             </div>
 
             <p className="text-lg text-gray-600 leading-relaxed max-w-md mx-auto lg:mx-0">
-              Elevate your living spaces with our bespoke remodeling services. From custom cabinetry to complete kitchen and bathroom transformations.
+              South Florida's trusted remodeling team. We bring precision, premium materials, and real craftsmanship to every home — no shortcuts, no surprises.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
@@ -39,11 +39,11 @@ export function Hero() {
             <div className="grid grid-cols-3 gap-4 lg:gap-8 pt-12 border-t border-black/10">
               <div>
                 <div className="text-3xl lg:text-4xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>10+</div>
-                <div className="text-xs tracking-wider text-gray-500">YEARS</div>
+                <div className="text-xs tracking-wider text-gray-500">YEARS IN MIAMI</div>
               </div>
               <div>
                 <div className="text-3xl lg:text-4xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>500+</div>
-                <div className="text-xs tracking-wider text-gray-500">PROJECTS</div>
+                <div className="text-xs tracking-wider text-gray-500">HOMES TRANSFORMED</div>
               </div>
               <div>
                 <div className="text-3xl lg:text-4xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>100%</div>

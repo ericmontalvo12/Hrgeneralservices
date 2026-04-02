@@ -39,7 +39,7 @@ export function Portfolio() {
                 Featured <span className="italic text-[#d4af37]">Work</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-xl">
-                A curated selection of our most distinguished projects, showcasing our commitment to exceptional design and craftsmanship
+                Real projects, real homes, right here in South Florida. Every job in our portfolio was built by our team from start to finish.
               </p>
             </div>
             <a href="#contact" className="text-sm tracking-wider border-b-2 border-[#d4af37] pb-1 hover:text-[#d4af37] transition-colors w-fit">
