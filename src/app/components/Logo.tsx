@@ -13,7 +13,7 @@ export function Logo({ className = '', size = 'md', href = '/' }: LogoProps) {
   const s = scales[size];
 
   return (
-    <a href={href} className={`flex flex-col items-start ${className}`}>
+    <a href={href} className={`flex flex-col items-center ${className}`}>
       <span
         className={`${s.hr} font-serif leading-none text-black`}
         style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 400 }}
