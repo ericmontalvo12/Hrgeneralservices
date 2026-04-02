@@ -63,12 +63,9 @@ export function Footer() {
         </div>
 
         <div className="border-t border-black/10 py-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex items-center justify-center">
             <p className="text-sm text-gray-500">
               © {new Date().getFullYear()} Elite Remodeling. All rights reserved.
-            </p>
-            <p className="text-sm text-gray-500">
-              Licensed, Bonded & Insured · License #123456
             </p>
           </div>
         </div>

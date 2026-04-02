@@ -41,7 +41,7 @@ export function Contact() {
             <div className="space-y-8">
               <div className="border-l-2 border-[#d4af37] pl-6">
                 <div className="text-xs tracking-widest text-[#d4af37] mb-2">PHONE</div>
-                <div className="text-white text-lg">+1 (555) 123-4567</div>
+                <div className="text-white text-lg">+1 (786) 674-8817</div>
               </div>
 
               <div className="border-l-2 border-[#d4af37] pl-6">
@@ -51,8 +51,6 @@ export function Contact() {
 
               <div className="border-l-2 border-[#d4af37] pl-6">
                 <div className="text-xs tracking-widest text-[#d4af37] mb-2">OFFICE</div>
-                <div className="text-white text-lg">123 Design Boulevard, Suite 400</div>
-                <div className="text-gray-400">Your City, ST 12345</div>
               </div>
 
               <div className="border-l-2 border-[#d4af37] pl-6">
