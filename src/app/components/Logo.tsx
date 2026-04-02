@@ -6,7 +6,7 @@ interface LogoProps {
 
 export function Logo({ className = '', size = 'md', href = '/' }: LogoProps) {
   const scales = {
-    sm: { hr: 'text-4xl', line: 'w-20', text: 'text-[10px]' },
+    sm: { hr: 'text-3xl lg:text-4xl', line: 'w-16 lg:w-20', text: 'text-[9px] lg:text-[10px]' },
     md: { hr: 'text-5xl', line: 'w-28', text: 'text-[11px]' },
     lg: { hr: 'text-7xl', line: 'w-36', text: 'text-sm' },
   };
