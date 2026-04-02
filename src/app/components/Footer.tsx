@@ -62,7 +62,7 @@ export function Footer() {
         <div className="border-t border-black/10 py-6 lg:py-8">
           <div className="flex items-center justify-center">
             <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} Elite Remodeling. All rights reserved.
+              © {new Date().getFullYear()} HR General Services. All rights reserved.
             </p>
           </div>
         </div>
