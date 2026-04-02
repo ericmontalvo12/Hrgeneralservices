@@ -8,24 +8,23 @@ import { Link } from 'react-router';
 
 export function Logo({ className = '', size = 'md', href = '/' }: LogoProps) {
   const scales = {
-    sm: { hr: 'text-3xl lg:text-4xl', line: 'w-16 lg:w-20', text: 'text-[9px] lg:text-[10px]' },
-    md: { hr: 'text-5xl', line: 'w-28', text: 'text-[11px]' },
-    lg: { hr: 'text-7xl', line: 'w-36', text: 'text-sm' },
+    sm: { hr: 'text-3xl lg:text-4xl', gap: 'mt-1', text: 'text-[8px] lg:text-[9px]', spacing: '0.35em' },
+    md: { hr: 'text-5xl', gap: 'mt-2', text: 'text-[10px]', spacing: '0.4em' },
+    lg: { hr: 'text-7xl', gap: 'mt-3', text: 'text-xs', spacing: '0.4em' },
   };
   const s = scales[size];
 
   return (
     <Link to={href} className={`flex flex-col items-center ${className}`}>
       <span
-        className={`${s.hr} font-serif leading-none text-black`}
+        className={`${s.hr} leading-none text-black`}
         style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 400 }}
       >
         HR
       </span>
-      <div className={`${s.line} h-px bg-[#d4af37] my-2`} />
       <span
-        className={`${s.text} tracking-[0.3em] text-[#d4af37] uppercase`}
-        style={{ fontFamily: 'Georgia, serif', letterSpacing: '0.3em' }}
+        className={`${s.gap} ${s.text} text-[#d4af37] uppercase`}
+        style={{ fontFamily: 'Playfair Display, Georgia, serif', letterSpacing: s.spacing, fontWeight: 400 }}
       >
         General Services
       </span>
