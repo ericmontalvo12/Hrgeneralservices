@@ -46,7 +46,6 @@ export function Footer() {
               <li><a href="#portfolio" className="text-gray-600 hover:text-black transition-colors">Portfolio</a></li>
               <li><a href="#services" className="text-gray-600 hover:text-black transition-colors">Services</a></li>
               <li><a href="#contact" className="text-gray-600 hover:text-black transition-colors">Contact</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-black transition-colors">Careers</a></li>
             </ul>
           </div>
 
@@ -56,7 +55,6 @@ export function Footer() {
             <ul className="space-y-3">
               <li><a href="#" className="text-gray-600 hover:text-black transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="text-gray-600 hover:text-black transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-black transition-colors">Licenses</a></li>
             </ul>
           </div>
         </div>
