@@ -53,8 +53,28 @@ const projects = [
     category: 'Painting' as Category,
   },
   {
+    image: '',
+    title: 'Accent Wall Design',
+    category: 'Painting' as Category,
+  },
+  {
+    image: '',
+    title: 'Full Room Color Transform',
+    category: 'Painting' as Category,
+  },
+  {
     image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
     title: 'Drywall Finishing',
+    category: 'Drywall' as Category,
+  },
+  {
+    image: '',
+    title: 'Smooth Wall Texture',
+    category: 'Drywall' as Category,
+  },
+  {
+    image: '',
+    title: 'Ceiling Repair & Finish',
     category: 'Drywall' as Category,
   },
   {
@@ -74,7 +94,7 @@ export default function PortfolioPage() {
 
   const filtered = activeCategory === 'All'
     ? projects
-    : projects.filter((p) => p.category === activeCategory);
+    : projects.filter((p) => p.category === activeCategory).slice(0, 3);
 
   return (
     <div className="min-h-screen bg-white">
