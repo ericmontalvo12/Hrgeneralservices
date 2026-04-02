@@ -1,5 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router';
 import { Logo } from './Logo';
 
 export function Header() {
@@ -15,22 +16,22 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-12">
-            <a href="#services" className="text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
+            <a href="/#services" className="text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
               SERVICES
             </a>
-            <a href="/portfolio" className="text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
+            <Link to="/portfolio" className="text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
               PORTFOLIO
-            </a>
-            <a href="/about" className="text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
+            </Link>
+            <Link to="/about" className="text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
               ABOUT
-            </a>
-            <a href="/contact" className="text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
+            </Link>
+            <Link to="/contact" className="text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
               CONTACT
-            </a>
+            </Link>
             <div className="w-px h-8 bg-black/10"></div>
-            <a href="/contact" className="text-sm tracking-wider bg-black text-white px-8 py-3 hover:bg-[#d4af37] hover:text-black transition-all duration-300">
+            <Link to="/contact" className="text-sm tracking-wider bg-black text-white px-8 py-3 hover:bg-[#d4af37] hover:text-black transition-all duration-300">
               GET QUOTE
-            </a>
+            </Link>
           </nav>
 
           {/* Mobile menu button */}
@@ -45,21 +46,21 @@ export function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="lg:hidden py-8 space-y-6 border-t border-black/5">
-            <a href="#services" className="block text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
+            <a href="/#services" className="block text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
               SERVICES
             </a>
-            <a href="/portfolio" className="block text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
+            <Link to="/portfolio" className="block text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
               PORTFOLIO
-            </a>
-            <a href="/about" className="block text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
+            </Link>
+            <Link to="/about" className="block text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
               ABOUT
-            </a>
-            <a href="/contact" className="block text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
+            </Link>
+            <Link to="/contact" className="block text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
               CONTACT
-            </a>
-            <a href="/contact" className="block text-sm tracking-wider bg-black text-white px-8 py-3 text-center hover:bg-[#d4af37] hover:text-black transition-all duration-300">
+            </Link>
+            <Link to="/contact" className="block text-sm tracking-wider bg-black text-white px-8 py-3 text-center hover:bg-[#d4af37] hover:text-black transition-all duration-300">
               GET QUOTE
-            </a>
+            </Link>
           </nav>
         )}
       </div>
