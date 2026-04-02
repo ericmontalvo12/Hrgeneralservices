@@ -2,7 +2,7 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center bg-white pt-24">
+    <section className="relative min-h-screen flex items-center bg-white pt-24 pb-16 lg:pb-0">
       <div className="max-w-[1400px] mx-auto px-8 lg:px-12 w-full">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left Content */}
