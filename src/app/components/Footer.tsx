@@ -1,4 +1,5 @@
 import { Instagram, Facebook } from 'lucide-react';
+import { Link } from 'react-router';
 import { Logo } from './Logo';
 
 export function Footer() {
@@ -53,8 +54,8 @@ export function Footer() {
           <div className="lg:col-span-2">
             <div className="text-xs tracking-widest mb-6 text-[#d4af37]">LEGAL</div>
             <ul className="space-y-3">
-              <li><a href="/privacy-policy" className="text-gray-600 hover:text-black transition-colors">Privacy Policy</a></li>
-              <li><a href="/terms-of-service" className="text-gray-600 hover:text-black transition-colors">Terms of Service</a></li>
+              <li><Link to="/privacy-policy" className="text-gray-600 hover:text-black transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/terms-of-service" className="text-gray-600 hover:text-black transition-colors">Terms of Service</Link></li>
             </ul>
           </div>
         </div>

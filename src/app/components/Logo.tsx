@@ -4,6 +4,8 @@ interface LogoProps {
   href?: string;
 }
 
+import { Link } from 'react-router';
+
 export function Logo({ className = '', size = 'md', href = '/' }: LogoProps) {
   const scales = {
     sm: { hr: 'text-3xl lg:text-4xl', line: 'w-16 lg:w-20', text: 'text-[9px] lg:text-[10px]' },
@@ -13,7 +15,7 @@ export function Logo({ className = '', size = 'md', href = '/' }: LogoProps) {
   const s = scales[size];
 
   return (
-    <a href={href} className={`flex flex-col items-center ${className}`}>
+    <Link to={href} className={`flex flex-col items-center ${className}`}>
       <span
         className={`${s.hr} font-serif leading-none text-black`}
         style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 400 }}
@@ -27,6 +29,6 @@ export function Logo({ className = '', size = 'md', href = '/' }: LogoProps) {
       >
         General Services
       </span>
-    </a>
+    </Link>
   );
 }
