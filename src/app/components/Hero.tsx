@@ -74,14 +74,14 @@ export function Hero() {
                   <ImageWithFallback
                     src="https://images.unsplash.com/photo-1663811397133-2d1f5addd9d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
                     alt="Luxury bathroom"
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    className="w-full h-full object-cover transition-all duration-500"
                   />
                 </div>
                 <div className="aspect-[4/3] overflow-hidden">
                   <ImageWithFallback
                     src="https://images.unsplash.com/photo-1759239355404-63313f92cfc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
                     alt="Modern kitchen"
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    className="w-full h-full object-cover transition-all duration-500"
                   />
                 </div>
               </div>
@@ -90,14 +90,14 @@ export function Hero() {
                   <ImageWithFallback
                     src="https://images.unsplash.com/photo-1663811396038-7a21d4eef49e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
                     alt="Elegant bathroom design"
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    className="w-full h-full object-cover transition-all duration-500"
                   />
                 </div>
                 <div className="aspect-[3/4] overflow-hidden">
                   <ImageWithFallback
                     src="https://images.unsplash.com/photo-1774716925801-cad665240e12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
                     alt="Modern door"
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    className="w-full h-full object-cover transition-all duration-500"
                   />
                 </div>
               </div>
