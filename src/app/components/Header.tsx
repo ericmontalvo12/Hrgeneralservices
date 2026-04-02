@@ -1,5 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { Logo } from './Logo';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,10 +10,7 @@ export function Header() {
       <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
         <div className="flex items-center justify-between h-24">
           <div className="flex items-center">
-            <div className="flex flex-col">
-              <span className="text-2xl tracking-[0.2em] text-black" style={{ fontFamily: 'Playfair Display, serif' }}>ELITE</span>
-              <span className="text-[10px] tracking-[0.3em] text-[#d4af37] ml-1">REMODELING</span>
-            </div>
+            <Logo size="sm" />
           </div>
 
           {/* Desktop Navigation */}
