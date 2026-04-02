@@ -1,5 +1,6 @@
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { Link } from 'react-router';
 
 const values = [
   {
@@ -111,12 +112,12 @@ export default function About() {
             <p className="text-gray-600 mb-10 max-w-xl mx-auto leading-relaxed">
               Free estimates, fast response. Reach out and let's talk about what your home needs.
             </p>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-block text-sm tracking-wider bg-black text-white px-12 py-4 hover:bg-[#d4af37] hover:text-black transition-all duration-300"
             >
               GET IN TOUCH
-            </a>
+            </Link>
           </div>
 
         </div>
