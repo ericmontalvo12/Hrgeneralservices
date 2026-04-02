@@ -6,25 +6,21 @@ export function Hero() {
       <div className="max-w-[1400px] mx-auto px-8 lg:px-12 w-full">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left Content */}
-          <div className="space-y-8 lg:pr-12">
+          <div className="space-y-8 lg:pr-12 text-center lg:text-left">
             <div className="space-y-6">
-              <div className="w-12 h-px bg-[#d4af37]"></div>
+              <div className="w-12 h-px bg-[#d4af37] mx-auto lg:mx-0"></div>
               <h1 className="text-4xl sm:text-5xl lg:text-7xl leading-[1.1] text-black" style={{ fontFamily: 'Playfair Display, serif' }}>
-                Exquisite
-                <br />
-                Interiors,
-                <br />
-                <span className="italic text-[#d4af37]">Crafted</span> to
-                <br />
-                Perfection
+                Exquisite Interiors, <span className="italic text-[#d4af37]">Crafted</span>
+                <span className="hidden lg:inline"><br /></span>
+                {' '}to Perfection
               </h1>
             </div>
 
-            <p className="text-lg text-gray-600 leading-relaxed max-w-md">
+            <p className="text-lg text-gray-600 leading-relaxed max-w-md mx-auto lg:mx-0">
               Elevate your living spaces with our bespoke remodeling services. From custom cabinetry to complete kitchen and bathroom transformations.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
               <a
                 href="#contact"
                 className="inline-flex items-center justify-center text-sm tracking-wider bg-black text-white px-6 lg:px-10 py-4 hover:bg-[#d4af37] hover:text-black transition-all duration-300"
