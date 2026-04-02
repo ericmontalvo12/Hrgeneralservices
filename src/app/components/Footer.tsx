@@ -15,11 +15,11 @@ export function Footer() {
               Where exceptional craftsmanship meets timeless design. Transforming spaces into extraordinary environments since 2011.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="group flex items-center gap-2 px-4 py-2 border border-black/15 text-xs tracking-widest text-gray-500 hover:border-[#d4af37] hover:text-[#d4af37] transition-all duration-300">
+              <a href="#" className="flex items-center gap-2 bg-black text-white px-5 py-3 text-xs tracking-widest hover:bg-[#d4af37] hover:text-black transition-all duration-300">
                 <Instagram className="w-4 h-4" />
                 <span>INSTAGRAM</span>
               </a>
-              <a href="#" className="group flex items-center gap-2 px-4 py-2 border border-black/15 text-xs tracking-widest text-gray-500 hover:border-[#d4af37] hover:text-[#d4af37] transition-all duration-300">
+              <a href="#" className="flex items-center gap-2 bg-black text-white px-5 py-3 text-xs tracking-widest hover:bg-[#d4af37] hover:text-black transition-all duration-300">
                 <Facebook className="w-4 h-4" />
                 <span>FACEBOOK</span>
               </a>
