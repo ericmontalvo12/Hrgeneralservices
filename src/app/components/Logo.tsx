@@ -5,9 +5,9 @@ interface LogoProps {
 
 export function Logo({ className = '', size = 'md' }: LogoProps) {
   const scales = {
-    sm: { hr: 'text-3xl', line: 'w-20', text: 'text-[9px]' },
-    md: { hr: 'text-5xl', line: 'w-28', text: 'text-[11px]' },
-    lg: { hr: 'text-6xl', line: 'w-32', text: 'text-xs' },
+    sm: { hr: 'text-5xl', line: 'w-28', text: 'text-[11px]' },
+    md: { hr: 'text-7xl', line: 'w-36', text: 'text-sm' },
+    lg: { hr: 'text-8xl', line: 'w-44', text: 'text-base' },
   };
   const s = scales[size];
 
