@@ -18,14 +18,17 @@ export function Header() {
             <a href="#services" className="text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
               SERVICES
             </a>
-            <a href="#portfolio" className="text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
+            <a href="/portfolio" className="text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
               PORTFOLIO
             </a>
-            <a href="#contact" className="text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
+            <a href="/about" className="text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
+              ABOUT
+            </a>
+            <a href="/contact" className="text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
               CONTACT
             </a>
             <div className="w-px h-8 bg-black/10"></div>
-            <a href="#contact" className="text-sm tracking-wider bg-black text-white px-8 py-3 hover:bg-[#d4af37] hover:text-black transition-all duration-300">
+            <a href="/contact" className="text-sm tracking-wider bg-black text-white px-8 py-3 hover:bg-[#d4af37] hover:text-black transition-all duration-300">
               GET QUOTE
             </a>
           </nav>
@@ -45,13 +48,16 @@ export function Header() {
             <a href="#services" className="block text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
               SERVICES
             </a>
-            <a href="#portfolio" className="block text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
+            <a href="/portfolio" className="block text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
               PORTFOLIO
             </a>
-            <a href="#contact" className="block text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
+            <a href="/about" className="block text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
+              ABOUT
+            </a>
+            <a href="/contact" className="block text-sm tracking-wider text-black hover:text-[#d4af37] transition-colors">
               CONTACT
             </a>
-            <a href="#contact" className="block text-sm tracking-wider bg-black text-white px-8 py-3 text-center hover:bg-[#d4af37] hover:text-black transition-all duration-300">
+            <a href="/contact" className="block text-sm tracking-wider bg-black text-white px-8 py-3 text-center hover:bg-[#d4af37] hover:text-black transition-all duration-300">
               GET QUOTE
             </a>
           </nav>

@@ -44,9 +44,10 @@ export function Footer() {
           <div className="lg:col-span-2">
             <div className="text-xs tracking-widest mb-6 text-[#d4af37]">COMPANY</div>
             <ul className="space-y-3">
-              <li><a href="#portfolio" className="text-gray-600 hover:text-black transition-colors">Portfolio</a></li>
-              <li><a href="#services" className="text-gray-600 hover:text-black transition-colors">Services</a></li>
-              <li><a href="#contact" className="text-gray-600 hover:text-black transition-colors">Contact</a></li>
+              <li><a href="/portfolio" className="text-gray-600 hover:text-black transition-colors">Portfolio</a></li>
+              <li><a href="/#services" className="text-gray-600 hover:text-black transition-colors">Services</a></li>
+              <li><a href="/about" className="text-gray-600 hover:text-black transition-colors">About</a></li>
+              <li><a href="/contact" className="text-gray-600 hover:text-black transition-colors">Contact</a></li>
             </ul>
           </div>
 
