@@ -11,7 +11,6 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
     alert('Thank you for your inquiry. We will contact you within 24 hours.');
   };
 
