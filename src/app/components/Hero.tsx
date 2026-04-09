@@ -10,14 +10,14 @@ export function Hero() {
             <div className="space-y-6">
               <div className="w-12 h-px bg-[#d4af37] mx-auto lg:mx-0"></div>
               <h1 className="text-4xl sm:text-5xl lg:text-7xl leading-[1.1] text-black" style={{ fontFamily: 'Playfair Display, serif' }}>
-                Miami Homes,<span className="italic text-[#d4af37]"> Built</span>
+                Miami Interiors,<span className="italic text-[#d4af37]"> Reimagined</span>
                 <span className="hidden lg:inline"><br /></span>
-                {' '}to Last
+                {' '}to Perfection
               </h1>
             </div>
 
             <p className="text-lg text-gray-600 leading-relaxed max-w-md mx-auto lg:mx-0">
-              South Florida's trusted remodeling team. We bring precision, premium materials, and real craftsmanship to every home — no shortcuts, no surprises.
+              South Florida's trusted interior remodeling specialists. We transform kitchens, bathrooms, and living spaces with precision, premium materials, and real craftsmanship — no shortcuts, no surprises.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
@@ -43,7 +43,7 @@ export function Hero() {
               </div>
               <div>
                 <div className="text-3xl lg:text-4xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>500+</div>
-                <div className="text-xs tracking-wider text-gray-500">HOMES TRANSFORMED</div>
+                <div className="text-xs tracking-wider text-gray-500">INTERIORS TRANSFORMED</div>
               </div>
               <div>
                 <div className="text-3xl lg:text-4xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>100%</div>
