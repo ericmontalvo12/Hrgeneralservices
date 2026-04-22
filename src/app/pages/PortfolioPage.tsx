@@ -49,17 +49,17 @@ const projects = [
     category: 'Flooring' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/painting-1.jpeg',
     title: 'Interior Painting Refresh',
     category: 'Painting' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/painting-2.webp',
     title: 'Accent Wall Design',
     category: 'Painting' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/painting-3.jpeg',
     title: 'Full Room Color Transform',
     category: 'Painting' as Category,
   },
