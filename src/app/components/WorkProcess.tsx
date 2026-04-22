@@ -11,7 +11,7 @@ const steps = [
   },
   {
     number: '03',
-    title: 'Measure \u0026 Plan',
+    title: 'Measure & Plan',
     description: 'We measure everything and plan the job in detail before a single tool comes out — because surprises belong on vacation, not in your home.',
   },
   {

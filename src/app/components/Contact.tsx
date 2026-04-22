@@ -1,4 +1,9 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -8,11 +13,29 @@ export function Contact() {
     service: '',
     message: '',
   });
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your inquiry. We will contact you within 24 hours.');
+    setStatus('sending');
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          message: formData.message,
+        },
+        EMAILJS_PUBLIC_KEY
+      );
+      setStatus('success');
+      setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+    } catch {
+      setStatus('error');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -151,11 +174,18 @@ export function Contact() {
                 />
               </div>
 
+              {status === 'success' && (
+                <p className="text-sm text-green-600 tracking-wide">Thank you! We'll be in touch within 24 hours.</p>
+              )}
+              {status === 'error' && (
+                <p className="text-sm text-red-600 tracking-wide">Something went wrong. Please try again or call us directly.</p>
+              )}
               <button
                 type="submit"
-                className="w-full text-sm tracking-wider bg-black text-white px-8 py-4 hover:bg-[#d4af37] hover:text-black transition-all duration-300 mt-4"
+                disabled={status === 'sending'}
+                className="w-full text-sm tracking-wider bg-black text-white px-8 py-4 hover:bg-[#d4af37] hover:text-black transition-all duration-300 mt-4 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                SUBMIT INQUIRY
+                {status === 'sending' ? 'SENDING...' : 'SUBMIT INQUIRY'}
               </button>
             </form>
           </div>
