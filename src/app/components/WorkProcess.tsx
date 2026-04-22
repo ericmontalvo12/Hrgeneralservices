@@ -70,7 +70,11 @@ export function WorkProcess() {
                   className="text-xl text-black mb-3"
                   style={{ fontFamily: 'Playfair Display, serif' }}
                 >
-                  {step.title}
+                  {step.title.includes('&')
+                    ? step.title.split('&').map((part, i, arr) => (
+                        <span key={i}>{part}{i < arr.length - 1 && <span style={{ fontFamily: 'Arial, sans-serif' }}>&amp;</span>}</span>
+                      ))
+                    : step.title}
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
                   {step.description}
