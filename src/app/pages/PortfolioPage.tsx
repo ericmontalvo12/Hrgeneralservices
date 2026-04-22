@@ -14,7 +14,7 @@ const projects = [
     category: 'Bathrooms' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/kitchen-1.jpeg',
     title: 'Modern Kitchen Design',
     category: 'Kitchens' as Category,
   },
@@ -24,69 +24,64 @@ const projects = [
     category: 'Bathrooms' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/flooring-1.jpeg',
     title: 'Hardwood Floor Installation',
     category: 'Flooring' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/kitchen-2.jpeg',
     title: 'Contemporary Kitchen',
     category: 'Kitchens' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/kitchen-3.jpeg',
     title: 'Open Concept Kitchen',
     category: 'Kitchens' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/bathroom-3.jpeg',
     title: 'Master Bathroom Suite',
     category: 'Bathrooms' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/flooring-2.webp',
     title: 'Porcelain Tile Flooring',
     category: 'Flooring' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/painting-1.jpeg',
     title: 'Interior Painting Refresh',
     category: 'Painting' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/painting-2.webp',
     title: 'Accent Wall Design',
     category: 'Painting' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/painting-3.jpeg',
     title: 'Full Room Color Transform',
     category: 'Painting' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/drywall-1.webp',
     title: 'Drywall Finishing',
     category: 'Drywall' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1572120360610-d971b9d7767c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/drywall-2.jpeg',
     title: 'Smooth Wall Texture',
     category: 'Drywall' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/drywall-3.jpeg',
     title: 'Ceiling Repair & Finish',
     category: 'Drywall' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1631889993959-41b4e9c6c8d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/flooring-3.jpeg',
     title: 'Luxury Vinyl Plank',
     category: 'Flooring' as Category,
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
-    title: 'Modern Bath Remodel',
-    category: 'Bathrooms' as Category,
   },
 ];
 
