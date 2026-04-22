@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 type Category = 'All' | 'Bathrooms' | 'Kitchens' | 'Flooring' | 'Painting' | 'Drywall';
 
@@ -53,12 +54,12 @@ const projects = [
     category: 'Painting' as Category,
   },
   {
-    image: '',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
     title: 'Accent Wall Design',
     category: 'Painting' as Category,
   },
   {
-    image: '',
+    image: 'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
     title: 'Full Room Color Transform',
     category: 'Painting' as Category,
   },
@@ -68,12 +69,12 @@ const projects = [
     category: 'Drywall' as Category,
   },
   {
-    image: '',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
     title: 'Smooth Wall Texture',
     category: 'Drywall' as Category,
   },
   {
-    image: '',
+    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
     title: 'Ceiling Repair & Finish',
     category: 'Drywall' as Category,
   },
@@ -94,7 +95,7 @@ export default function PortfolioPage() {
 
   const filtered = activeCategory === 'All'
     ? projects
-    : projects.filter((p) => p.category === activeCategory).slice(0, 3);
+    : projects.filter((p) => p.category === activeCategory);
 
   return (
     <div className="min-h-screen bg-white">
@@ -137,10 +138,11 @@ export default function PortfolioPage() {
                 key={`${project.category}-${index}`}
                 className="group relative aspect-[4/3] overflow-hidden bg-gray-100"
               >
-                {/* Placeholder */}
-                <div className="w-full h-full flex items-center justify-center bg-gray-100">
-                  <span className="text-xs tracking-widest text-gray-400 uppercase">{project.category}</span>
-                </div>
+                <ImageWithFallback
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
                 {/* Hover overlay */}
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-6">
