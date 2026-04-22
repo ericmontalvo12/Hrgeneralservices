@@ -14,7 +14,7 @@ const projects = [
     category: 'Bathrooms' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/kitchen-1.jpeg',
     title: 'Modern Kitchen Design',
     category: 'Kitchens' as Category,
   },
@@ -29,12 +29,12 @@ const projects = [
     category: 'Flooring' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/kitchen-2.jpeg',
     title: 'Contemporary Kitchen',
     category: 'Kitchens' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/kitchen-3.jpeg',
     title: 'Open Concept Kitchen',
     category: 'Kitchens' as Category,
   },
