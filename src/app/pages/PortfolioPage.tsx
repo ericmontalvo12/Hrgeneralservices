@@ -29,7 +29,7 @@ const projects = [
     category: 'Flooring' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
     title: 'Contemporary Kitchen',
     category: 'Kitchens' as Category,
   },
