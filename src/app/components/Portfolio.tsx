@@ -8,9 +8,9 @@ const projects = [
     year: '2025',
   },
   {
-    image: 'https://images.unsplash.com/photo-1759239355404-63313f92cfc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
-    title: 'Timeless Dining',
-    category: 'Interior',
+    image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
+    title: 'Open Concept Kitchen',
+    category: 'Kitchen',
     year: '2025',
   },
   {
