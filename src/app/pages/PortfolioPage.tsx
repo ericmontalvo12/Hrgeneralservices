@@ -24,7 +24,7 @@ const projects = [
     category: 'Bathrooms' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/flooring-1.jpeg',
     title: 'Hardwood Floor Installation',
     category: 'Flooring' as Category,
   },
@@ -44,7 +44,7 @@ const projects = [
     category: 'Bathrooms' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/flooring-2.webp',
     title: 'Porcelain Tile Flooring',
     category: 'Flooring' as Category,
   },
@@ -79,7 +79,7 @@ const projects = [
     category: 'Drywall' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1631889993959-41b4e9c6c8d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/flooring-3.jpeg',
     title: 'Luxury Vinyl Plank',
     category: 'Flooring' as Category,
   },
