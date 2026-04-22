@@ -14,7 +14,7 @@ const projects = [
     category: 'Bathrooms' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1759239355404-63313f92cfc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
     title: 'Modern Kitchen Design',
     category: 'Kitchens' as Category,
   },
