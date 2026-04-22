@@ -83,11 +83,6 @@ const projects = [
     title: 'Luxury Vinyl Plank',
     category: 'Flooring' as Category,
   },
-  {
-    image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
-    title: 'Modern Bath Remodel',
-    category: 'Bathrooms' as Category,
-  },
 ];
 
 export default function PortfolioPage() {
