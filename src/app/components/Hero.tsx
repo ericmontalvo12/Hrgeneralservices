@@ -65,7 +65,7 @@ export function Hero() {
               </div>
               <div className="aspect-square overflow-hidden">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1759239355404-63313f92cfc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                  src="/portfolio/kitchen-1.jpeg"
                   alt="Modern kitchen"
                   className="w-full h-full object-cover"
                 />
@@ -98,7 +98,7 @@ export function Hero() {
                 </div>
                 <div className="aspect-[4/3] overflow-hidden">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1759239355404-63313f92cfc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                    src="/portfolio/kitchen-1.jpeg"
                     alt="Modern kitchen"
                     className="w-full h-full object-cover transition-all duration-500"
                   />
