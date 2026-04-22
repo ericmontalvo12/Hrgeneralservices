@@ -64,17 +64,17 @@ const projects = [
     category: 'Painting' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/drywall-1.webp',
     title: 'Drywall Finishing',
     category: 'Drywall' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1572120360610-d971b9d7767c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/drywall-2.jpeg',
     title: 'Smooth Wall Texture',
     category: 'Drywall' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/drywall-3.jpeg',
     title: 'Ceiling Repair & Finish',
     category: 'Drywall' as Category,
   },
