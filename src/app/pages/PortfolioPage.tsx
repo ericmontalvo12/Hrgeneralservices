@@ -79,7 +79,7 @@ const projects = [
     category: 'Drywall' as Category,
   },
   {
-    image: '/portfolio/flooring-3.jpeg',
+    image: '/portfolio/flooring-3.webp',
     title: 'Luxury Vinyl Plank',
     category: 'Flooring' as Category,
   },
