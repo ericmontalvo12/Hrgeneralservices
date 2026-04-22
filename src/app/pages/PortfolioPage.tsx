@@ -39,7 +39,7 @@ const projects = [
     category: 'Kitchens' as Category,
   },
   {
-    image: 'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: '/portfolio/bathroom-3.jpeg',
     title: 'Master Bathroom Suite',
     category: 'Bathrooms' as Category,
   },
