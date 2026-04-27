@@ -3,9 +3,9 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function Hero() {
   return (
-    <section className="relative bg-white pt-28 pb-24 lg:h-screen lg:pt-0 lg:pb-0">
+    <section className="relative bg-white pt-24 pb-8 lg:h-screen lg:pt-0 lg:pb-0">
       <div className="max-w-[1400px] mx-auto px-8 lg:px-12 w-full lg:h-full lg:flex lg:flex-col lg:pt-24">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 lg:flex-1 lg:pb-8 items-center lg:items-stretch">
+        <div className="grid lg:grid-cols-2 gap-4 lg:gap-16 lg:flex-1 lg:pb-8 items-center lg:items-stretch">
 
           {/* Left Content */}
           <div className="space-y-6 lg:pr-12 lg:text-left self-center">
