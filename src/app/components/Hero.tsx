@@ -128,6 +128,22 @@ export function Hero() {
             <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-[#d4af37] -z-10"></div>
           </div>
         </div>
+
+        {/* Mobile-only stats — shown below images */}
+        <div className="lg:hidden grid grid-cols-3 gap-4 pt-6 mt-2 border-t border-black/10">
+          <div>
+            <div className="text-3xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>10+</div>
+            <div className="text-xs tracking-wider text-gray-500">YEARS IN MIAMI</div>
+          </div>
+          <div>
+            <div className="text-3xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>500+</div>
+            <div className="text-xs tracking-wider text-gray-500">INTERIORS TRANSFORMED</div>
+          </div>
+          <div>
+            <div className="text-3xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>100%</div>
+            <div className="text-xs tracking-wider text-gray-500">SATISFACTION</div>
+          </div>
+        </div>
       </div>
     </section>
   );
