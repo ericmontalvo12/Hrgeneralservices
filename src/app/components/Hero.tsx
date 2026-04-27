@@ -10,7 +10,7 @@ export function Hero() {
           {/* Left Content */}
           <div className="space-y-6 lg:pr-12 text-center lg:text-left self-center">
             <div className="space-y-5">
-              <div className="w-12 h-px bg-[#d4af37] mx-auto lg:mx-0"></div>
+              <div className="w-12 h-px bg-[#d4af37]"></div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] text-black" style={{ fontFamily: 'Playfair Display, serif' }}>
                 Miami Interiors,<span className="italic text-[#d4af37]"> Reimagined</span>
                 <span className="hidden lg:inline"><br /></span>
