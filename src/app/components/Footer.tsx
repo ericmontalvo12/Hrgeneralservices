@@ -1,4 +1,4 @@
-import { Instagram, Facebook } from 'lucide-react';
+import { Facebook } from 'lucide-react';
 import { Link } from 'react-router';
 import { Logo } from './Logo';
 
@@ -16,10 +16,6 @@ export function Footer() {
               Quality work, honest pricing, zero shortcuts. Serving Miami and South Florida since 2016.
             </p>
             <div className="flex gap-3 justify-center lg:justify-start">
-              <a href="#" className="flex items-center gap-2 bg-black text-white px-5 py-3 text-xs tracking-widest hover:bg-[#d4af37] hover:text-black transition-all duration-300">
-                <Instagram className="w-4 h-4" />
-                <span>INSTAGRAM</span>
-              </a>
               <a href="https://www.facebook.com/share/1CS7486aUR/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-black text-white px-5 py-3 text-xs tracking-widest hover:bg-[#d4af37] hover:text-black transition-all duration-300">
                 <Facebook className="w-4 h-4" />
                 <span>FACEBOOK</span>

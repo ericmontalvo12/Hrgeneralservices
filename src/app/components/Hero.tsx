@@ -8,9 +8,9 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 lg:flex-1 lg:pb-8 items-center lg:items-stretch">
 
           {/* Left Content */}
-          <div className="space-y-6 lg:pr-12 text-center lg:text-left self-center">
+          <div className="space-y-6 lg:pr-12 lg:text-left self-center">
             <div className="space-y-5">
-              <div className="w-12 h-px bg-[#d4af37] mx-auto lg:mx-0"></div>
+              <div className="w-12 h-px bg-[#d4af37]"></div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] text-black" style={{ fontFamily: 'Playfair Display, serif' }}>
                 Miami Interiors,<span className="italic text-[#d4af37]"> Reimagined</span>
                 <span className="hidden lg:inline"><br /></span>
@@ -18,11 +18,11 @@ export function Hero() {
               </h1>
             </div>
 
-            <p className="text-lg text-gray-600 leading-relaxed max-w-md mx-auto lg:mx-0">
+            <p className="hidden lg:block text-lg text-gray-600 leading-relaxed max-w-md">
               South Florida's trusted interior remodeling specialists. We transform kitchens, bathrooms, and living spaces with precision, premium materials, and real craftsmanship — no shortcuts, no surprises.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="hidden lg:flex gap-4 justify-start">
               <a
                 href="#contact"
                 className="inline-flex items-center justify-center text-sm tracking-wider bg-black text-white px-6 lg:px-10 py-4 hover:bg-[#d4af37] hover:text-black transition-all duration-300"
@@ -38,7 +38,7 @@ export function Hero() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 lg:gap-8 pt-6 border-t border-black/10">
+            <div className="hidden lg:grid grid-cols-3 gap-4 lg:gap-8 pt-6 border-t border-black/10">
               <div>
                 <div className="text-3xl lg:text-4xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>10+</div>
                 <div className="text-xs tracking-wider text-gray-500">YEARS IN MIAMI</div>

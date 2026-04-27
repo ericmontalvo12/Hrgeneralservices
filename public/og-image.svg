@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0f0f0f"/>
+
+  <!-- Subtle gold border -->
+  <rect x="0" y="0" width="1200" height="630" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.2"/>
+
+  <!-- Top-left accent line (matching site logo) -->
+  <rect x="60" y="62" width="54" height="2" fill="#d4af37"/>
+
+  <!-- HR -->
+  <text
+    x="600"
+    y="268"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="172"
+    font-weight="400"
+    fill="white"
+    text-anchor="middle">HR</text>
+
+  <!-- GENERAL SERVICES -->
+  <text
+    x="600"
+    y="308"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="18"
+    font-weight="400"
+    fill="#d4af37"
+    text-anchor="middle"
+    letter-spacing="9">GENERAL SERVICES</text>
+
+  <!-- Divider -->
+  <rect x="476" y="332" width="248" height="1.5" fill="#d4af37" opacity="0.5"/>
+
+  <!-- Tagline -->
+  <text
+    x="600"
+    y="386"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="36"
+    font-weight="400"
+    fill="white"
+    text-anchor="middle">Miami Interiors, Reimagined to Perfection</text>
+
+  <!-- Subtitle -->
+  <text
+    x="600"
+    y="430"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="18"
+    fill="#888888"
+    text-anchor="middle">South Florida's Interior Remodeling Specialists</text>
+
+  <!-- Separator -->
+  <rect x="60" y="480" width="1080" height="1" fill="white" opacity="0.07"/>
+
+  <!-- URL -->
+  <text
+    x="600"
+    y="522"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="14"
+    fill="#d4af37"
+    text-anchor="middle"
+    letter-spacing="3"
+    opacity="0.8">HRGENERALSERVICES.COM</text>
+
+  <!-- Bottom-right accent line -->
+  <rect x="1086" y="512" width="54" height="2" fill="#d4af37"/>
+</svg>
