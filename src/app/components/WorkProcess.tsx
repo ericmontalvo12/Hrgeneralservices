@@ -42,7 +42,7 @@ export function WorkProcess() {
         {/* Steps — desktop: horizontal row, mobile: vertical stack */}
         <div className="relative flex flex-col lg:flex-row lg:items-start gap-0">
           {/* Connecting line — desktop only */}
-          <div className="hidden lg:block absolute top-10 left-0 right-0 h-px bg-[#d4af37]/30 z-0" style={{ top: '2.5rem' }}></div>
+          <div className="hidden lg:block absolute h-px bg-[#d4af37]/30 z-0" style={{ top: '2.5rem', left: '10%', right: '10%' }}></div>
 
           {steps.map((step, index) => (
             <div

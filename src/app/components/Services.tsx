@@ -1,33 +1,41 @@
+import { Link } from 'react-router';
+
 const services = [
   {
     number: '01',
     title: 'Drywall Installation',
     description: 'Clean lines start here. We install and finish drywall to a flawless surface — the foundation every great interior deserves.',
+    portfolioCategory: 'Drywall',
   },
   {
     number: '02',
     title: 'Interior Painting',
     description: 'Color that holds. We use premium paints and prep every surface properly so the finish looks sharp on day one and stays that way.',
+    portfolioCategory: 'Painting',
   },
   {
     number: '03',
     title: 'Floor Installation',
     description: 'From wide-plank hardwood to large-format porcelain, we install flooring with the precision it takes to get it level, tight, and built to last.',
+    portfolioCategory: 'Flooring',
   },
   {
     number: '04',
     title: 'Custom Cabinetry',
     description: 'Built to fit your space and your life. Our cabinetry is designed for function first, finished for looks that elevate the whole room.',
+    portfolioCategory: 'Kitchens',
   },
   {
     number: '05',
     title: 'Bathroom Remodels',
     description: 'We turn outdated bathrooms into spaces you actually want to be in — clean, modern, and built with materials that hold up in South Florida\'s climate.',
+    portfolioCategory: 'Bathrooms',
   },
   {
     number: '06',
     title: 'Kitchen Remodels',
     description: 'The kitchen is the heart of the home. We redesign and rebuild it with thoughtful layouts, quality finishes, and zero shortcuts.',
+    portfolioCategory: 'Kitchens',
   },
 ];
 
@@ -47,9 +55,10 @@ export function Services() {
 
         <div className="space-y-px">
           {services.map((service, index) => (
-            <div
+            <Link
               key={index}
-              className="group relative bg-black border-t border-white/10 hover:bg-[#d4af37] transition-all duration-500"
+              to={`/portfolio?category=${service.portfolioCategory}`}
+              className="group relative block bg-black border-t border-white/10 hover:bg-[#d4af37] transition-all duration-500"
             >
               <div className="flex items-start lg:items-center gap-8 lg:gap-16 py-10 lg:py-12">
                 <div className="text-4xl lg:text-5xl text-[#d4af37] group-hover:text-black transition-colors min-w-[80px]" style={{ fontFamily: 'Playfair Display, serif' }}>
@@ -71,7 +80,7 @@ export function Services() {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
@@ -86,7 +87,20 @@ const projects = [
 ];
 
 export default function PortfolioPage() {
-  const [activeCategory, setActiveCategory] = useState<Category>('All');
+  const [searchParams] = useSearchParams();
+  const categoryParam = searchParams.get('category') as Category | null;
+
+  const [activeCategory, setActiveCategory] = useState<Category>(
+    categoryParam && categories.includes(categoryParam) ? categoryParam : 'All'
+  );
+
+  useEffect(() => {
+    if (categoryParam && categories.includes(categoryParam)) {
+      setActiveCategory(categoryParam);
+    } else if (!categoryParam) {
+      setActiveCategory('All');
+    }
+  }, [categoryParam]);
 
   const filtered = activeCategory === 'All'
     ? projects
