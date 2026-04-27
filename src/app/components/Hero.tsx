@@ -130,7 +130,7 @@ export function Hero() {
         </div>
 
         {/* Mobile-only stats — shown below images */}
-        <div className="lg:hidden grid grid-cols-3 gap-4 pt-6 mt-2 border-t border-black/10">
+        <div className="lg:hidden grid grid-cols-3 gap-4 mt-3">
           <div>
             <div className="text-3xl text-black mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>10+</div>
             <div className="text-xs tracking-wider text-gray-500">YEARS IN MIAMI</div>
