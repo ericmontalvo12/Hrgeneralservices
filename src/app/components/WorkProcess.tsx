@@ -65,7 +65,7 @@ export function WorkProcess() {
               </div>
 
               {/* Content */}
-              <div className="lg:text-center px-0 lg:px-4 pb-12 lg:pb-0 pl-4 lg:pl-0">
+              <div className="lg:text-center pb-12 lg:pb-0 pl-24 lg:px-4 lg:pl-4">
                 <h3
                   className="text-xl text-black mb-3"
                   style={{ fontFamily: 'Playfair Display, serif' }}
