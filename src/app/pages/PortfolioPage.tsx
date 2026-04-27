@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
@@ -86,7 +87,20 @@ const projects = [
 ];
 
 export default function PortfolioPage() {
-  const [activeCategory, setActiveCategory] = useState<Category>('All');
+  const [searchParams] = useSearchParams();
+  const categoryParam = searchParams.get('category') as Category | null;
+
+  const [activeCategory, setActiveCategory] = useState<Category>(
+    categoryParam && categories.includes(categoryParam) ? categoryParam : 'All'
+  );
+
+  useEffect(() => {
+    if (categoryParam && categories.includes(categoryParam)) {
+      setActiveCategory(categoryParam);
+    } else if (!categoryParam) {
+      setActiveCategory('All');
+    }
+  }, [categoryParam]);
 
   const filtered = activeCategory === 'All'
     ? projects
@@ -138,17 +152,6 @@ export default function PortfolioPage() {
                   alt={project.title}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                {/* Hover overlay */}
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <div className="p-6">
-                    <div className="text-xs tracking-widest text-[#d4af37] mb-1">
-                      {project.category.toUpperCase()}
-                    </div>
-                    <h3 className="text-lg text-white" style={{ fontFamily: 'Playfair Display, serif' }}>
-                      {project.title}
-                    </h3>
-                  </div>
-                </div>
               </div>
             ))}
           </div>
