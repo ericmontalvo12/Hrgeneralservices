@@ -46,50 +46,50 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-32 bg-black">
+    <section id="contact" className="py-32 bg-white">
       <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
           {/* Left Content */}
           <div>
             <div className="w-12 h-px bg-[#d4af37] mb-8"></div>
-            <h2 className="text-5xl lg:text-6xl text-white mb-8" style={{ fontFamily: 'Playfair Display, serif' }}>
+            <h2 className="text-5xl lg:text-6xl text-black mb-8" style={{ fontFamily: 'Playfair Display, serif' }}>
               Let's Build
               <br />
               <span className="italic text-[#d4af37]">Something Great</span>
             </h2>
-            <p className="text-lg text-gray-400 mb-12 max-w-lg leading-relaxed">
+            <p className="text-lg text-gray-600 mb-12 max-w-lg leading-relaxed">
               Free estimates, fast response, and a team that shows up and delivers. Tell us about your project and let's get started.
             </p>
 
             <div className="space-y-6 lg:space-y-8">
               <div className="border-l-2 border-[#d4af37] pl-4 lg:pl-6">
                 <div className="text-xs tracking-widest text-[#d4af37] mb-2">PHONE</div>
-                <div className="text-white text-lg">+1 (786) 674-8817</div>
+                <div className="text-black text-lg">+1 (786) 674-8817</div>
               </div>
 
               <div className="border-l-2 border-[#d4af37] pl-4 lg:pl-6">
                 <div className="text-xs tracking-widest text-[#d4af37] mb-2">EMAIL</div>
-                <div className="text-white text-lg">hrgeneralservices777@gmail.com</div>
+                <div className="text-black text-lg">hrgeneralservices777@gmail.com</div>
               </div>
 
               <div className="border-l-2 border-[#d4af37] pl-4 lg:pl-6">
                 <div className="text-xs tracking-widest text-[#d4af37] mb-2">OFFICE</div>
-                <div className="text-white text-lg">Miami, FL</div>
+                <div className="text-black text-lg">Miami, FL</div>
               </div>
 
               <div className="border-l-2 border-[#d4af37] pl-4 lg:pl-6">
                 <div className="text-xs tracking-widest text-[#d4af37] mb-2">HOURS</div>
-                <div className="text-white">Monday - Friday: 8:00 AM - 6:00 PM</div>
-                <div className="text-gray-400">Saturday: 9:00 AM - 4:00 PM</div>
+                <div className="text-black">Monday - Friday: 8:00 AM - 6:00 PM</div>
+                <div className="text-gray-500">Saturday: 9:00 AM - 4:00 PM</div>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white p-6 lg:p-12">
+          <div className="bg-black p-6 lg:p-12">
             <form onSubmit={handleSubmit} className="space-y-8">
               <div>
-                <label htmlFor="name" className="block text-xs tracking-wider mb-3 text-black">
+                <label htmlFor="name" className="block text-xs tracking-wider mb-3 text-white">
                   FULL NAME *
                 </label>
                 <input
@@ -99,13 +99,13 @@ export function Contact() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-0 py-4 border-b border-black/20 focus:outline-none focus:border-[#d4af37] transition-colors bg-transparent"
+                  className="w-full px-0 py-4 border-b border-white/20 focus:outline-none focus:border-[#d4af37] transition-colors bg-transparent text-white placeholder:text-white/40"
                   placeholder="John Doe"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-xs tracking-wider mb-3 text-black">
+                <label htmlFor="email" className="block text-xs tracking-wider mb-3 text-white">
                   EMAIL ADDRESS *
                 </label>
                 <input
@@ -115,13 +115,13 @@ export function Contact() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-0 py-4 border-b border-black/20 focus:outline-none focus:border-[#d4af37] transition-colors bg-transparent"
+                  className="w-full px-0 py-4 border-b border-white/20 focus:outline-none focus:border-[#d4af37] transition-colors bg-transparent text-white placeholder:text-white/40"
                   placeholder="john@example.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-xs tracking-wider mb-3 text-black">
+                <label htmlFor="phone" className="block text-xs tracking-wider mb-3 text-white">
                   PHONE NUMBER
                 </label>
                 <input
@@ -130,13 +130,13 @@ export function Contact() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-0 py-4 border-b border-black/20 focus:outline-none focus:border-[#d4af37] transition-colors bg-transparent"
+                  className="w-full px-0 py-4 border-b border-white/20 focus:outline-none focus:border-[#d4af37] transition-colors bg-transparent text-white placeholder:text-white/40"
                   placeholder="+1 (555) 123-4567"
                 />
               </div>
 
               <div>
-                <label htmlFor="service" className="block text-xs tracking-wider mb-3 text-black">
+                <label htmlFor="service" className="block text-xs tracking-wider mb-3 text-white">
                   SERVICE OF INTEREST *
                 </label>
                 <select
@@ -145,7 +145,7 @@ export function Contact() {
                   required
                   value={formData.service}
                   onChange={handleChange}
-                  className="w-full px-0 py-4 border-b border-black/20 focus:outline-none focus:border-[#d4af37] transition-colors bg-transparent"
+                  className="w-full px-0 py-4 border-b border-white/20 focus:outline-none focus:border-[#d4af37] transition-colors bg-black text-white"
                 >
                   <option value="">Select a service</option>
                   <option value="drywall">Drywall Installation</option>
@@ -159,7 +159,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-xs tracking-wider mb-3 text-black">
+                <label htmlFor="message" className="block text-xs tracking-wider mb-3 text-white">
                   PROJECT DETAILS *
                 </label>
                 <textarea
@@ -169,21 +169,21 @@ export function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full px-0 py-4 border-b border-black/20 focus:outline-none focus:border-[#d4af37] transition-colors resize-none bg-transparent"
+                  className="w-full px-0 py-4 border-b border-white/20 focus:outline-none focus:border-[#d4af37] transition-colors resize-none bg-transparent text-white placeholder:text-white/40"
                   placeholder="Tell us about your vision..."
                 />
               </div>
 
               {status === 'success' && (
-                <p className="text-sm text-green-600 tracking-wide">Thank you! We'll be in touch within 24 hours.</p>
+                <p className="text-sm text-green-400 tracking-wide">Thank you! We'll be in touch within 24 hours.</p>
               )}
               {status === 'error' && (
-                <p className="text-sm text-red-600 tracking-wide">Something went wrong. Please try again or call us directly.</p>
+                <p className="text-sm text-red-400 tracking-wide">Something went wrong. Please try again or call us directly.</p>
               )}
               <button
                 type="submit"
                 disabled={status === 'sending'}
-                className="w-full text-sm tracking-wider bg-black text-white px-8 py-4 hover:bg-[#d4af37] hover:text-black transition-all duration-300 mt-4 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full text-sm tracking-wider bg-white text-black px-8 py-4 hover:bg-[#d4af37] hover:text-black transition-all duration-300 mt-4 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {status === 'sending' ? 'SENDING...' : 'SUBMIT INQUIRY'}
               </button>
