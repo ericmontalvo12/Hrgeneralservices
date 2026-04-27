@@ -152,17 +152,6 @@ export default function PortfolioPage() {
                   alt={project.title}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                {/* Hover overlay */}
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <div className="p-6">
-                    <div className="text-xs tracking-widest text-[#d4af37] mb-1">
-                      {project.category.toUpperCase()}
-                    </div>
-                    <h3 className="text-lg text-white" style={{ fontFamily: 'Playfair Display, serif' }}>
-                      {project.title}
-                    </h3>
-                  </div>
-                </div>
               </div>
             ))}
           </div>
