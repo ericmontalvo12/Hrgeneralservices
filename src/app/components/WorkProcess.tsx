@@ -47,7 +47,7 @@ export function WorkProcess() {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="relative flex-1 flex flex-col items-start lg:items-center z-10 group"
+              className="relative flex-1 flex flex-row items-start lg:flex-col lg:items-center z-10 group"
             >
               {/* Mobile vertical connector */}
               {index < steps.length - 1 && (
@@ -55,7 +55,7 @@ export function WorkProcess() {
               )}
 
               {/* Step number bubble */}
-              <div className="flex items-center justify-center w-20 h-20 border border-[#d4af37]/40 bg-white mb-6 flex-shrink-0">
+              <div className="flex items-center justify-center w-20 h-20 border border-[#d4af37]/40 bg-white flex-shrink-0 lg:mb-6">
                 <span
                   className="text-3xl text-[#d4af37]"
                   style={{ fontFamily: 'Playfair Display, serif' }}
@@ -65,7 +65,7 @@ export function WorkProcess() {
               </div>
 
               {/* Content */}
-              <div className="lg:text-center pb-12 lg:pb-0 pl-24 lg:px-4 lg:pl-4">
+              <div className="lg:text-center pb-12 lg:pb-0 pl-6 pt-3 lg:pt-0 lg:px-4">
                 <h3
                   className="text-xl text-black mb-3"
                   style={{ fontFamily: 'Playfair Display, serif' }}
