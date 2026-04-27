@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="white"/>
+  <text x="50" y="63" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="400" fill="#000000" text-anchor="middle">HR</text>
+  <rect x="15" y="74" width="70" height="3" fill="#d4af37"/>
+</svg>
