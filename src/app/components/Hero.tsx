@@ -88,7 +88,7 @@ export function Hero() {
             </div>
 
             {/* Desktop: staggered columns that fill the available height */}
-            <div className="hidden lg:flex gap-4 h-full">
+            <div className="hidden lg:flex gap-4 h-full py-8">
               <div className="flex-1 flex flex-col gap-4">
                 <div className="overflow-hidden" style={{ flex: 3 }}>
                   <ImageWithFallback
