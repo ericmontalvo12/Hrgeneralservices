@@ -27,13 +27,12 @@ const highlights = [
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       <Header />
 
-      <main className="pt-40 pb-32">
+      {/* Section 1: white — page header + story */}
+      <section className="bg-white pt-40 pb-24">
         <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
-
-          {/* Section Header */}
           <div className="mb-20">
             <div className="w-12 h-px bg-[#d4af37] mb-8"></div>
             <h1 className="text-5xl lg:text-6xl text-black mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
@@ -41,8 +40,7 @@ export default function About() {
             </h1>
           </div>
 
-          {/* Story Section */}
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 mb-32 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             <div>
               <div className="text-xs tracking-widest text-[#d4af37] mb-6">OUR STORY</div>
               <p className="text-gray-600 text-lg leading-relaxed">
@@ -66,62 +64,67 @@ export default function About() {
               </div>
             </div>
           </div>
-
-          {/* Values Section */}
-          <div className="mb-32">
-            <div className="w-12 h-px bg-[#d4af37] mb-8"></div>
-            <h2 className="text-4xl lg:text-5xl text-black mb-16" style={{ fontFamily: 'Playfair Display, serif' }}>
-              Our <span className="italic text-[#d4af37]">Values</span>
-            </h2>
-            <div className="grid lg:grid-cols-3 gap-8">
-              {values.map((value, index) => (
-                <div key={index} className="border-t-2 border-[#d4af37] pt-8">
-                  <h3 className="text-2xl text-black mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                    {value.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {value.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Why Choose Us */}
-          <div className="mb-32 bg-black py-16 px-8 lg:px-16">
-            <div className="w-12 h-px bg-[#d4af37] mb-8"></div>
-            <h2 className="text-4xl lg:text-5xl text-white mb-12" style={{ fontFamily: 'Playfair Display, serif' }}>
-              Why Choose <span className="italic text-[#d4af37]">HR General</span>
-            </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {highlights.map((item, index) => (
-                <div key={index} className="flex items-center gap-4">
-                  <span className="text-[#d4af37] text-xl flex-shrink-0">—</span>
-                  <span className="text-white tracking-wide">{item}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* CTA */}
-          <div className="text-center">
-            <div className="w-12 h-px bg-[#d4af37] mb-8 mx-auto"></div>
-            <h2 className="text-4xl lg:text-5xl text-black mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
-              Ready to Get <span className="italic text-[#d4af37]">Started?</span>
-            </h2>
-            <p className="text-gray-600 mb-10 max-w-xl mx-auto leading-relaxed">
-              Free estimates, fast response. Reach out and let's talk about what your home needs.
-            </p>
-            <Link
-              to="/contact"
-              className="inline-block text-sm tracking-wider bg-black text-white px-12 py-4 hover:bg-[#d4af37] hover:text-black transition-all duration-300"
-            >
-              GET IN TOUCH
-            </Link>
-          </div>
-
         </div>
-      </main>
+      </section>
+
+      {/* Section 2: black — values */}
+      <section className="bg-black py-24">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
+          <div className="w-12 h-px bg-[#d4af37] mb-8"></div>
+          <h2 className="text-4xl lg:text-5xl text-white mb-16" style={{ fontFamily: 'Playfair Display, serif' }}>
+            Our <span className="italic text-[#d4af37]">Values</span>
+          </h2>
+          <div className="grid lg:grid-cols-3 gap-8">
+            {values.map((value, index) => (
+              <div key={index} className="border-t-2 border-[#d4af37] pt-8">
+                <h3 className="text-2xl text-white mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+                  {value.title}
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  {value.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3: white — why choose us */}
+      <section className="bg-white py-24">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
+          <div className="w-12 h-px bg-[#d4af37] mb-8"></div>
+          <h2 className="text-4xl lg:text-5xl text-black mb-12" style={{ fontFamily: 'Playfair Display, serif' }}>
+            Why Choose <span className="italic text-[#d4af37]">HR General</span>
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {highlights.map((item, index) => (
+              <div key={index} className="flex items-center gap-4">
+                <span className="text-[#d4af37] text-xl flex-shrink-0">—</span>
+                <span className="text-black tracking-wide">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4: black — CTA */}
+      <section className="bg-black py-24">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12 text-center">
+          <div className="w-12 h-px bg-[#d4af37] mb-8 mx-auto"></div>
+          <h2 className="text-4xl lg:text-5xl text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+            Ready to Get <span className="italic text-[#d4af37]">Started?</span>
+          </h2>
+          <p className="text-gray-400 mb-10 max-w-xl mx-auto leading-relaxed">
+            Free estimates, fast response. Reach out and let's talk about what your home needs.
+          </p>
+          <Link
+            to="/contact"
+            className="inline-block text-sm tracking-wider bg-white text-black px-12 py-4 hover:bg-[#d4af37] hover:text-black transition-all duration-300"
+          >
+            GET IN TOUCH
+          </Link>
+        </div>
+      </section>
 
       <Footer />
     </div>

@@ -107,7 +107,7 @@ export default function PortfolioPage() {
     : projects.filter((p) => p.category === activeCategory);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black">
       <Header />
 
       <main className="pt-32 pb-32">
@@ -115,24 +115,24 @@ export default function PortfolioPage() {
           {/* Section Header */}
           <div className="mb-16">
             <div className="w-12 h-px bg-[#d4af37] mb-8"></div>
-            <h1 className="text-5xl lg:text-6xl text-black mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+            <h1 className="text-5xl lg:text-6xl text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
               Our <span className="italic text-[#d4af37]">Work</span>
             </h1>
-            <p className="text-lg text-gray-600 max-w-2xl">
+            <p className="text-lg text-gray-400 max-w-2xl">
               A collection of completed projects across Miami and South Florida, each reflecting our commitment to quality and detail.
             </p>
           </div>
 
           {/* Category Filters */}
-          <div className="flex flex-wrap gap-6 mb-16 border-b border-black/10 pb-6">
+          <div className="flex flex-wrap gap-6 mb-16 border-b border-white/10 pb-6">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
                 className={`text-sm tracking-wider pb-1 transition-all duration-200 ${
                   activeCategory === cat
-                    ? 'text-black border-b-2 border-[#d4af37]'
-                    : 'text-gray-500 hover:text-black border-b-2 border-transparent'
+                    ? 'text-white border-b-2 border-[#d4af37]'
+                    : 'text-gray-500 hover:text-white border-b-2 border-transparent'
                 }`}
               >
                 {cat.toUpperCase()}
@@ -145,7 +145,7 @@ export default function PortfolioPage() {
             {filtered.map((project, index) => (
               <div
                 key={`${project.category}-${index}`}
-                className="group relative aspect-[4/3] overflow-hidden bg-gray-100"
+                className="group relative aspect-[4/3] overflow-hidden bg-gray-900"
               >
                 <ImageWithFallback
                   src={project.image}

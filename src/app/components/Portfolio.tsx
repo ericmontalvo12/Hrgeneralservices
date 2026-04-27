@@ -29,15 +29,15 @@ const projects = [
 
 export function Portfolio() {
   return (
-    <section id="portfolio" className="py-32 bg-white">
+    <section id="portfolio" className="py-32 bg-black">
       <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
         <div className="mb-24">
           <div className="w-12 h-px bg-[#d4af37] mb-8"></div>
           <div>
-            <h2 className="text-5xl lg:text-6xl text-black mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
-              Featured <span className="italic text-[#d4af37]">Work</span>
+            <h2 className="text-5xl lg:text-6xl text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+              <span className="text-white">Featured </span><span className="italic text-[#d4af37]">Work</span>
             </h2>
-            <p className="text-lg text-gray-600 max-w-xl">
+            <p className="text-lg text-gray-400 max-w-xl">
               Real projects, real homes, right here in South Florida. Every job in our portfolio was built by our team from start to finish.
             </p>
           </div>
