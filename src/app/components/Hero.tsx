@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function Hero() {
@@ -28,12 +29,12 @@ export function Hero() {
               >
                 SCHEDULE CONSULTATION
               </a>
-              <a
-                href="#portfolio"
+              <Link
+                to="/portfolio"
                 className="inline-flex items-center justify-center text-sm tracking-wider border border-black text-black px-6 lg:px-10 py-4 hover:bg-black hover:text-white transition-all duration-300"
               >
                 VIEW PORTFOLIO
-              </a>
+              </Link>
             </div>
 
             {/* Stats */}
