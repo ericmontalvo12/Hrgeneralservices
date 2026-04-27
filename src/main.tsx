@@ -6,6 +6,7 @@ import TermsOfService from "./app/pages/TermsOfService.tsx";
 import PortfolioPage from "./app/pages/PortfolioPage.tsx";
 import About from "./app/pages/About.tsx";
 import ContactPage from "./app/pages/ContactPage.tsx";
+import NotFound from "./app/pages/NotFound.tsx";
 import "./styles/index.css";
 
 createRoot(document.getElementById("root")!).render(
@@ -17,6 +18,7 @@ createRoot(document.getElementById("root")!).render(
       <Route path="/portfolio" element={<PortfolioPage />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<ContactPage />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   </BrowserRouter>
 );
